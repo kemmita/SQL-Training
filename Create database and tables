@@ -1,0 +1,10 @@
+create database University
+
+create table students(
+ID int not null primary key,
+first_name nvarchar(30) null,
+last_name nvarchar(30) not null,
+GPA decimal not null,
+Grades decimal not null,
+email nvarchar(30) null
+);
