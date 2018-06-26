@@ -1,0 +1,2 @@
+to enter run sqlcmd -S localhost -U SA -P 'yourpassword'
+to leave run QUIT
