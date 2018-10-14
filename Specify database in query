@@ -1,0 +1,9 @@
+1. by using the "Use [exampleDb]" and "Go" keywords, the table generated will be placed within the exampleDb database. This is typically
+not neccesary in most casses, but here is how you do it.
+
+Use [exampleDb]
+Go
+create table testzwei(
+Id int primary key not null,
+Gender nvarchar(50) not null
+);
