@@ -1,0 +1,6 @@
+1. The column must be set to not null and must use the key word "identity"
+
+create table tblPerson (
+Id int primary key not null identity,
+Name nvarchar(50) not null,
+);
