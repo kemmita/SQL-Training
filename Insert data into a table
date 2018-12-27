@@ -1,0 +1,2 @@
+1. first specify which coulmn you want to fill and then supply the value.
+insert into users (username) values("Vikcy")
