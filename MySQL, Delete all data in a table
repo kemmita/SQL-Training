@@ -1,0 +1,2 @@
+1. Run command set sql_safe_updates = 0
+2. Run command delete from exampletablename
