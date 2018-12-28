@@ -1,0 +1,4 @@
+select * from users where name like "%a%";
+
+#does not contain
+select * from users where name not like "%a%";
