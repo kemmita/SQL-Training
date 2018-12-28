@@ -1,0 +1,2 @@
+1. simply add the auto_increment keyword to implment this on a column.
+create table users(id int primary key auto_increment, name text null, address text null);
