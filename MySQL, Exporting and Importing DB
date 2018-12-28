@@ -1,0 +1,21 @@
+**LINUX NOTICE** it looks like on Linux we will not need the "./" in ./mysql
+
+1. First we need to gain access to the mysql bin directory. On my mac the direcotry is "cd /usr/local/mysql/bin"
+
+2. Next we need to do a mysql data dump. We will need the name and password of the root user for the server or the db,
+I am not sure? You then need to supply the name of the db in question. Finally suply the path of where the file should be
+generated and you must name the filel.
+
+./mysqldump -uroot -ppassword -hlocalhost kemmitone >~/kemmitdb.sql
+
+3. The db has now been exported into a single file. Lets now import that db.
+
+4. To begin importing, lets head over to  the mysql bin direcotry of the new server. Again you will need credntials for the
+root user of the server and the db.
+
+5. In bin run command <./mysql -uroot -ppassword -hlocalhost>
+
+6. Once logged into mysql create a new database, we will name ours temp. Log out of MySQL using the keyword quit.
+
+7. Now we can import the file/dbdump run command <./mysql -uroot -ppassword -hlocalhost temp < ~/kemmitdb.sql>
+The temp db we created will recieve all of the data from the file we imported.
