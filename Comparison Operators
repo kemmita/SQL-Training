@@ -1,0 +1,16 @@
+select * from users where age > 45;
+select * from users where age < 45;
+
+# less than or equal and greater than or equal is the same as programming code.
+#<= >=
+
+select * from users where name  <>  "sunny";
+#<> is the same as != and both can be used
+
+
+
+#This will select users where name is null and the second will be not null
+
+select * from users where name is not null;
+
+select * from users where name is null;
