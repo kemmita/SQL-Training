@@ -1,0 +1,5 @@
+1. remove sql safe updates
+set sql_safe_updates=0
+
+2. Query
+delete from users where name = "Russell"
