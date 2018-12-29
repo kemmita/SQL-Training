@@ -1,0 +1,3 @@
+1. Run this query to update a users name
+
+update users set name = "Roxy" where id = 1;
