@@ -1,0 +1,4 @@
+1. We can use multiple operators to narrow down a query
+
+//Below we want to find a user that is older than 24, name is Russell and the user id does not equal 8
+select * from users where age > 24 && name = "Russell" && id <> 8
