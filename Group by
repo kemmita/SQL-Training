@@ -1,0 +1,5 @@
+select gender, avg(weight) from survey group by(gender);
+
+select country, avg(smoke) from survey group by(country) order by avg(smoke);
+
+select country, gender, avg(height) from survey where gender = 'male' group by(country) order by avg(height) desc;
