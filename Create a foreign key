@@ -1,0 +1,17 @@
+1. Create address table
+
+create table address (id int primary key auto_increment, street varchar(50));
+
+2. Insert 3 values into the address table
+insert into address (street) values('Apple Lane'), ('Broad Street'), ('Chruch Lane');
+
+3. Create person table and create a forign key that is attached to address pk id.
+create table person (id int primary key auto_increment, name varchar(50), address_id int, foreign key(address_id) references address(id));
+
+4. Insert users into the persons table, notice how we can not submit a vbalue higher than 3 for the address_id as onl3 addresses
+exist in the address table
+
+insert into person (name, address_id) values('Anna', 1);
+insert into person (name, address_id) values('Arnold', 1);
+insert into person (name, address_id) values('Bob', 2);
+insert into person (name, address_id) values('Casey', 3);
