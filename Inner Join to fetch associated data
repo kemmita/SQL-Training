@@ -1,0 +1,3 @@
+1. We have a foreign key address_id setup with the address id pk. We want to retrieve the all person along with their address.
+
+select * from person inner join address on address.id = person.address_id order by(address.id)
