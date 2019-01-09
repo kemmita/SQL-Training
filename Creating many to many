@@ -1,0 +1,14 @@
+1. person and product table already exist, they both have a pk=id but they do not have any fk
+2. Create a middle table using the name of both tables "person_product" and create two forign keys
+
+create table person_product (person_id int not null, product_id int not null,
+foreign key (person_id) references person(id),
+foreign key (product_id) references product(id));
+
+3. Person 3 will buyt product 2
+insert into person_product (person_id, product_id) values(3,2);
+
+4. Use join to fetch the users and what they bought
+
+select p.id, p.name, pr.name as product_name, pp.product_id  from person p join person_product pp on pp.person_id=p.id
+join product pr on pr.id=pp.product_id
