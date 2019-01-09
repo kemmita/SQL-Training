@@ -1,0 +1,6 @@
+1. Left and right joins can be used to fetch all data within one table even if the other table does not have a relationship
+
+//right join will yield all addresses.
+select street, name from person p right join address a on a.id = p.address_id;
+
+select street, name from person p left join address a on a.id = p.address_id
