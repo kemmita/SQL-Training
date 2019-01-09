@@ -1,0 +1,5 @@
+if we want to insert more than one record at once we can use "()" to do that.
+
+
+// Below table will have 3 values added, resulting in 3 columns.
+insert into person_product (person_id, product_id) values(1,3), (2,3), (3,1);
