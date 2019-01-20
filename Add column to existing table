@@ -1,0 +1,3 @@
+1. Run the below query
+
+Alter table person add column email varchar(50) not null
