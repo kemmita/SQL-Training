@@ -1,0 +1,2 @@
+##This will not work if there is data in the tables
+alter table fighter add constraint fk_country foreign key (name) references country(id)
