@@ -1,0 +1,8 @@
+#you must run the set query before you can use the variable.
+set @user = "John";
+
+select @user;
+
+set @num = 4;
+
+select * from sales where transaction_value > @num;
