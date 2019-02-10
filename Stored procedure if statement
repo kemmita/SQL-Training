@@ -1,0 +1,16 @@
+use larsql;
+
+DELIMITER :
+create procedure withdraw(in inId int)
+begin
+
+	if inId = 1 then
+		select balance from accounts where inId = id;
+	else
+		select 'No balance found';
+	end if;
+    
+end :
+
+
+Call withdraw(1);
