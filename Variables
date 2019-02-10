@@ -12,3 +12,10 @@ select * from sales where transaction_value > @num;
 
 select @transaction_sum := sum(transaction_value) from sales;
 select @transaction_sum
+
+
+3. using select into
+
+select id, name into @theId, @theName from products where id = 3;
+
+select @theId, @theName
