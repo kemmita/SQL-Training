@@ -4,13 +4,8 @@ use larsql;
 #Begin Stored Procedure
 delimiter :
 
-create procedure HelloWorldTwo()
+create procedure HelloWorldThree()
 begin
 	select "Hello World";
 end:
-
-delimiter :
 #End Stored Procedure
-
-#Call on the stored procedure
-call HelloWorldTwo();
