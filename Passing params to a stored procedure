@@ -1,0 +1,12 @@
+#Database in use
+use larsql;
+
+DELIMITER :
+
+CREATE PROCEDURE ShowProductsFromDB(in maxId int)
+begin
+	select * from products where id < maxId;
+end:
+
+
+CALL ShowProductsFromDB(9);
