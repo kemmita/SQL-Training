@@ -1,0 +1,2 @@
+DELETE FROM tblFirst
+SELECT * FROM tblFirst;
