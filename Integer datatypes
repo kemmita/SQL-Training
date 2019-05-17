@@ -1,0 +1,13 @@
+/*tiny ints are greate for storing small non-negative numbers, this will only take up one byt and can hold anything between
+0 and 255*/
+DECLARE @tinyInt AS tinyint = 8;
+
+--small ints take up 2 bytes and can holf up to 32,767
+DECLARE @smallInt AS smallint = 2287;
+
+--int can hold 2 147 483 647 
+DECLARE @int AS int = 12345600;
+
+--bigint is used for holding crazy huge numbers 9 223 372 036 854 775 807
+DECLARE @bigy AS bigint = 3223372036854775807;
+Select @bigy;
