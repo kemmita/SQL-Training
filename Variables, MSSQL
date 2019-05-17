@@ -1,0 +1,8 @@
+/*Create var*/
+DECLARE @myvar AS int = 8;
+
+/*If we want to assign a new value to the var, use set*/
+set @myvar = 12;
+
+/*Use select to view var.*/
+SELECT @myvar AS result;
