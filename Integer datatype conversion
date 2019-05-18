@@ -1,0 +1,7 @@
+--implicit datatype conversion
+declare @nummer as decimal(5,2) = 3
+select @nummer
+
+--explicit datatype conversion
+select CONVERT(decimal(5,2), 3)/2
+select CAST(3 as decimal(5,2))/2
