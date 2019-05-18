@@ -1,0 +1,17 @@
+--char is ASCII and great to use for the English based letters. -1byte
+declare @myEng as char = 'a'
+select @myEng
+
+--varchar is ASCII and is good if you do not have a great idea of how long your char strings will be. 
+--the above char is good to use if you know the close approx of you char string length like char(10)
+declare @myEngSent as varchar(100) = 'ajsjsjwnwdiuhfiuhbfeugrfreugferuygb'
+select @myEngSent
+
+--nchar is UNICODE -2bytes
+declare @myForeign as nchar = N'д'
+select @myForeign
+
+--varchar is UNICODE and is good if you do not have a great idea of how long your nchar strings will be. 
+--the above nchar is good to use if you know the close approx of you char string length like char(10)
+declare @myForeignSent nvarchar(100) = N'музыка отличная'
+select @myForeignSent
