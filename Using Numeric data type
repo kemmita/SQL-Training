@@ -1,0 +1,4 @@
+1. With numeric you will need to declare the max lenght, along with how precise it will be.
+DECLARE @MOOLA AS NUMERIC(7,2)
+SET @MOOLA = 12345.67
+SELECT @MOOLA
