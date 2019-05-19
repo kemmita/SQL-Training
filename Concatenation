@@ -1,0 +1,7 @@
+1. Using the + will allow you to concatebnate data
+
+declare @firstName as varchar(20) = 'Russell'
+declare @middleName as varchar(20)= 'Spiel'
+declare @lastName as varchar(20) = 'Kemmit'
+
+select @firstName + @middleName + @lastName AS FULLNAME
