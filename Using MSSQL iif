@@ -1,0 +1,6 @@
+declare @firstName as varchar(20) = 'Russell'
+declare @middleName as varchar(20)
+declare @lastName as varchar(20) = 'Kemmit'
+
+//the iif will check if the middleName data is defined, if it is not, "null" then it will provide an empty string.
+select @firstName + iif(@middleName is null, '', @middleName) + @lastName AS FULLNAME
