@@ -1,0 +1,4 @@
+select 'My Age Is: ' + CONVERT(char(3), 29)
+
+//'C' is for currency and 'ja-JP' is that the currency is formated in Japanese.
+select 'My salary is: ' + FORMAT(2345.9, 'C', 'ja-JP')
