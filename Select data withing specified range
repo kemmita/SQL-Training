@@ -1,0 +1,8 @@
+--find all employees with employee numbers between 200 and 209
+select * from tblEmployee where EmployeeNumber >= 200 and EmployeeNumber <= 209 
+
+--find all employees with employee numbers between 200 and 209
+select * from tblEmployee where EmployeeNumber between 200 and 209 
+
+--Here we use a list with the in keyword
+select * from tblEmployee where EmployeeNumber in (12, 200, 287)
