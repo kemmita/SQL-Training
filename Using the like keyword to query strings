@@ -1,0 +1,8 @@
+-- query employees who lastName ends with w
+select * from tblEmployee where [EmployeeLastName] like '%w'
+
+-- query employees who lastName begins with w
+select * from tblEmployee where [EmployeeLastName] like 'w%'
+
+-- query employees who lastName has a w as the third letter
+select * from tblEmployee where [EmployeeLastName] like '__w%'
