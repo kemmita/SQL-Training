@@ -1,0 +1,7 @@
+1. LEFT(EmployeeLastName, 1) will grab the first letter of the lastname
+
+select LEFT(EmployeeLastName,1) as first_initial, 
+count(*) as countOfInitial from tblEmployee
+group by LEFT(EmployeeLastName,1)
+having count(*) >= 50
+order by COUNT(*) desc
