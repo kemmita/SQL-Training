@@ -1,0 +1,6 @@
+1. The order below is very important. 
+select LEFT(EmployeeLastName,1) as first_initial, 
+count(*) as countOfInitial from tblEmployee
+group by LEFT(EmployeeLastName,1)
+having count(*) >= 50
+order by COUNT(*) desc
