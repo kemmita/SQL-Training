@@ -1,0 +1,2 @@
+1. Using distinct will alow you to only print each department name once
+select distinct Department from tblEmployee
