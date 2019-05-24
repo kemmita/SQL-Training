@@ -1,0 +1,2 @@
+1. to rename a coulmn in SQLSERVER, use sp_rename, ensure to specify the name of the table and exisitng coulumn.
+sp_rename 'tblCustomer.SaleDate', 'SalesDate'
