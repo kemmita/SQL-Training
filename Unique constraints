@@ -1,0 +1,4 @@
+1. Unuiqe constraints are placed on columns that you do not want to have duplicates placed in.
+
+alter table tblEmployee
+add constraint unqGovermantId unique (EmployeeGovernmentID);
