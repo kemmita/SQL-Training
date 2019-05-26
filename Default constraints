@@ -1,0 +1,5 @@
+1. A defualt constraint can be set to a column in the chance the data is not submitted for the column in question.
+
+alter table tblTransaction add constraint defDateOfEntry default GETDATE() for DateOfEntry
+
+insert into tblTransaction(Amount, DateOfTransaction, EmployeeNumber) values(195.05, '2015-05-26 00:00:00', 658)
