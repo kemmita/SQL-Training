@@ -1,0 +1,8 @@
+1. We can add a check constraint to check the data before it is inserted.
+
+// This check will ensure that the EmployeeFirstName does not equal 'Samson'   
+alter table tblEmployee add constraint chkFName check(EmployeeFirstName != 'Samson');
+
+insert into tblEmployee values(1126, 'Samson', 'G', 'Nile', 'numahsus71', '1996-06-26', 'Commercial')
+
+select * from tblEmployee
