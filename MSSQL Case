@@ -1,6 +1,0 @@
-declare @firstName as varchar(20) = 'Russell'
-declare @middleName as varchar(20) 
-declare @lastName as varchar(20) = 'Kemmit'
-
-
-select @firstName + case when @middleName is null THEN '' ELSE @middleName END + @lastName AS FULLNAME
