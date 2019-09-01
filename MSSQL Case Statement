@@ -1,1 +1,9 @@
-https://gist.github.com/kemmita/5d225cf9fdd0499ea7e920e750ca02e3
+```sql
+select SAL , ENAME, 
+	case
+	when SAL <= 2000 then 'Underpaid'
+	when SAL >= 4000 then 'Overpaid'
+	else 'Ok'
+	end as Status
+from EMPs
+```
