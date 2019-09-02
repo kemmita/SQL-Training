@@ -1,5 +1,6 @@
 1. A defualt constraint can be set to a column in the chance the data is not submitted for the column in question.
+2. If data is not submitted for an employees salary, 1000 will be applied as default
+```sql
+alter table EMPs add constraint baseSAL default 1000 for SAL
+```
 
-alter table tblTransaction add constraint defDateOfEntry default GETDATE() for DateOfEntry
-
-insert into tblTransaction(Amount, DateOfTransaction, EmployeeNumber) values(195.05, '2015-05-26 00:00:00', 658)
