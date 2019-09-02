@@ -1,1 +1,0 @@
-select su.id, su.country, su.age, sm.question as smoke_question, e.question as exercise_question from survey su join smoke sm on su.smoke=sm.id join exercise e on e.id=su.exercise;
