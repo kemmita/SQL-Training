@@ -1,5 +1,4 @@
 ```sql
-select e.ENAME, d.LOC, d.DNAME, eb.Recieved 
-from EMPs e join DEPTs d on e.DEPTNO = d.DEPTNO 
-left join emp_bonus eb on e.EMPNO = eb.EMPNO
+select SUM(e.SAL) as TotalSalary, d.LOC as Location, m.Name as ManagerName 
+from EMPS e join DEPTs d on e.DEPTNO = d.DEPTNO join MGRs m on e.MGR = m.Id group by d.LOC, m.Name
 ```
